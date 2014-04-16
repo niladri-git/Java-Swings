@@ -1,5 +1,3 @@
-/* Working partly */
-
 // $ javac  -Xlint:unchecked com/zetcode/ComboBox.java
 
 package com.zetcode;
@@ -38,11 +36,7 @@ public class ComboBox extends JDialog implements
     private JButton button = null;
 
     ImageIcon icon = new ImageIcon(
-		// ClassLoader.getSystemResource("bal.jpg"));
-		
-		getClass().getResource("bal.jpg"));
-
-			// mute = new ImageIcon(getClass().getResource("mute.jpg"));
+		ClassLoader.getSystemResource("bal.jpg"));		
 
     public ComboBox() {
 
